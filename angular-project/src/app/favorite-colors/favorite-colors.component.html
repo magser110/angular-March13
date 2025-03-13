@@ -1,0 +1,10 @@
+<p>favorite-colors works!</p>
+<h2>favorite favorite-colors</h2>
+<p>my favorite colors are: {{ colorList() }}</p>
+@for (color of colorList(); track color){
+  <li>{{color}}</li>
+}
+
+<input [(ngModel)]="newColor" placeholder="add new color">
+<button (click)="addColor()">add color</button>
+<p>you added: {{newColor}}</p>

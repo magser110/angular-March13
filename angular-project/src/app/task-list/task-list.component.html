@@ -1,0 +1,9 @@
+<p>task-list works!</p>
+<h1>daily tasks</h1>
+<p>my tasks are: {{ taskList() }}</p>
+@for (task of taskList(); track task) {
+  <li> {{task}}</li>
+}
+<input [(ngModel)]="newTask" placeholder="enter new task">
+<button (click)="addTask()">add task</button>
+<p>you added: {{newTask}}</p>

@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { CounterComponent } from "./counter/counter.component";
-import { ProfileCardComponent } from './profile-card/profile-card.component';
-import { TeamPageComponent } from './team-page/team-page.component';
-import { ParentComponent } from './parent/parent.component';
+import { CounterComponent } from './counter/counter.component';
+import { TaskListComponent } from './task-list/task-list.component';
+import { FavoriteColorsComponent } from './favorite-colors/favorite-colors.component';
+import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UserProfileComponent, CounterComponent, ProfileCardComponent, TeamPageComponent, ParentComponent],
+  imports: [RouterOutlet, CounterComponent, TaskListComponent, FavoriteColorsComponent, TemperatureConverterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
