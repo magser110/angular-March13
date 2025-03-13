@@ -10,20 +10,23 @@ import { FormsModule } from '@angular/forms';
 export class CalculatorComponent {
   inputOne: number = 0;
   inputTwo: number = 0;
+  mathOperator: string = '+';
+  result: number = 0;
 
-  add(inputOne: number, inputTwo: number){
-    return inputOne + inputTwo;
+  calculate(){
+    if(this.mathOperator === '+'){
+    this.result =  (+this.inputOne) + (+this.inputTwo);
   }
 
-  subract(inputOne: number, inputTwo: number){
-    return inputOne - inputTwo;
+  else if(this.mathOperator === '-'){
+    this.result = (+this.inputOne) - (+this.inputTwo);
   }
-
-  multiply(inputOne: number, inputTwo: number){
-    return inputOne * inputTwo;
+  else if(this.mathOperator === '*'){
+    this.result = (+this.inputOne) * (+this.inputTwo);
   }
-
-  divide(inputOne: number, inputTwo: number){
-    return inputOne / inputTwo;
+  else if(this.mathOperator === '/'){
+    this.result = (+this.inputOne) / (+this.inputTwo);
   }
 }
+}
+

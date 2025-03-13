@@ -2,5 +2,11 @@
 <h4>calcluate two numbers</h4>
 <input [(ngModel)]="inputOne" placeholder="number 1">
 <input [(ngModel)]="inputTwo" placeholder="number 2">
-<button (click)="add(inputOne, inputTwo)"> add</button>
-<p>result {{ add }}</p>
+<select [(ngModel)]="mathOperator">
+  <option value="+">add</option>
+  <option value="-">subract</option>
+  <option value="*">multiply</option>
+  <option value="/">divide</option>
+</select>
+<button (click)="calculate()">enter</button>
+<p>result {{ result }}</p>
