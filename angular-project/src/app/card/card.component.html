@@ -1,0 +1,7 @@
+<p>card works!</p>
+<div class="card">
+  <img  *ngIf="imageUrl()" [src]="imageUrl()" alt="card image"/>
+  <h2>{{title()}}</h2>
+  <p>{{description()}}</p>
+  <button (click)="onAction()">action</button>
+</div>
