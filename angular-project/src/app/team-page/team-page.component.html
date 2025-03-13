@@ -1,0 +1,11 @@
+<p>team-page works!</p>
+<h1>our team</h1>
+<div class="team">
+  <app-profile-card
+  **ngFor="let profile of profiles"
+  [name]="profile.name"
+  [role]="profile.role"
+  [department]="profile.department"
+  [image]="profile.image">
+</app-profile-card>
+</div>
