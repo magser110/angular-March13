@@ -1,0 +1,10 @@
+<p>shopping-list works!</p>
+<h5>grocery list</h5>
+<p>I need to pick up: {{groceryList()}}</p>
+@for (item of groceryList(); track item){
+  <li>{{item}}</li>
+}
+<input [(ngModel)]="newItem" placeholder="add new item">
+<button (click)="addNewItem()">add item</button>
+<p>you added: {{newItem}} to the list</p>
+

@@ -15,17 +15,18 @@ let timeLeft = timeLimit;
 let timerInterval;
 
 export class CountdownTimerComponent {
-//   time = timeLimit;
+  time = timeLimit;
+  interval: any;
 
-//   startCountdown(){
-//    interval = setInterval(() => {
-//     if (time === 1) {
+  startCountdown(){
+   this.interval = setInterval(() => {
+    if (time === 1) {
 
-//       clearInterval(this.interval)
-//     } else {
-//       time--;
+      clearInterval(this.interval)
+    } else {
+      time--;
 
-//     }
-//   }, 1000);
-// }
+    }
+  }, 1000);
+}
 }

@@ -1,6 +1,6 @@
 <p>countdown-timer works!</p>
 <div class="timer">
-  <p *ngif="countdown > 0"> time remaining: {{timerCountDown}} seconds</p>
-  <p *ngif="timerCountDown === 0">time's up</p>
+  <p *ngif="time > 0"> time remaining: {{time}} seconds</p>
+  <p *ngif="time === 1">time's up</p>
   <button (click)="startCountdown()">restart</button>
 </div>

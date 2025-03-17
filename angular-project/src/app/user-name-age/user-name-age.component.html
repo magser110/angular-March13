@@ -1,0 +1,8 @@
+<p>user-name-age works!</p>
+<p>Name: {{name}}</p>
+<input type="text" [(ngModel)]="name" placeholder="Enter your name">
+<button (click)="updateName()">Update name</button>
+
+<p>Age: {{age}}</p>
+<input type="number" [(ngModel)]="age" placeholder="Enter your age">
+<button (click)="updateAge()">Update age</button>
