@@ -1,0 +1,9 @@
+<p>new-countdown works!</p>
+<div class="timer">
+  @if (time > 0) {
+    <p> time remaining: {{time}} seconds</p>
+  } @else if (time === 0) {
+    <p>time's up</p>
+  }
+  <button (click)="startCountdown()">restart</button>
+</div>

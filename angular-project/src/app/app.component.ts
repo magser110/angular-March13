@@ -7,13 +7,14 @@ import { TemperatureConverterComponent } from './temperature-converter/temperatu
 import { CalculatorComponent } from './calculator/calculator.component';
 import { QuoteRotatorComponent } from './quote-rotator/quote-rotator.component';
 import { ProductListComponent } from './product-list/product-list.component';
-// import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { UserNameAgeComponent } from './user-name-age/user-name-age.component';
+import { NewCountdownComponent } from './new-countdown/new-countdown.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, TaskListComponent, FavoriteColorsComponent, TemperatureConverterComponent, CalculatorComponent, QuoteRotatorComponent, ProductListComponent, ShoppingListComponent, UserNameAgeComponent],
+  imports: [RouterOutlet, CounterComponent, TaskListComponent, FavoriteColorsComponent, TemperatureConverterComponent, CalculatorComponent, QuoteRotatorComponent, ProductListComponent, ShoppingListComponent, UserNameAgeComponent, NewCountdownComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
